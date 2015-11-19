@@ -28,4 +28,4 @@ gulp css
 ```
 Reload the index.html and...
 
-![Magic gif !](https://raw.github.com/yoanm/gulp-starter-tasks/master/assets/src/img/magic.gif)
+![Magic gif !](https://raw.githubusercontent.com/yoanmalie/gulp-starter-tasks/master/assets/src/img/magic.gif)
