@@ -9,7 +9,7 @@ This is my basic Gulp starter for all projects. You can easily modify tasks, add
   - sync, reload the page on save,
   - watch, look if files have changed (and do a task).
 
- ##### And there are a cool error handling!
+##### And there are a cool error handling!
  
 :warning: Be careful with the reset tasks! What it does : reset the /assets folder.
 
@@ -21,7 +21,8 @@ npm install
 ```
 Take a pause, go to swimming pool during this time. :swimmer:
 
- ##### Try...
+##### Try...
+ 
 Open the index.html file (to see the differences) and launch this Gulp css task:
 ```shell
 gulp css
