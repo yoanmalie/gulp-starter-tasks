@@ -16,7 +16,7 @@ This is my basic Gulp starter for all projects. You can easily modify tasks, add
 # How to run ?
 First, clone this repository, and run npm...
 ```shell
-git clone git://github.com/yoanm/gulp-starter-tasks.git
+git clone https://github.com/yoanm/gulp-starter-tasks.git
 npm install
 ```
 Take a pause, go to swimming pool during this time. :swimmer:
