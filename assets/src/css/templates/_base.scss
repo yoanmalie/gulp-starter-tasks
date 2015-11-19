@@ -1,0 +1,20 @@
+html {
+  font-size : $root-font-size;
+}
+
+body {
+  background-color  : $color-background;
+  font-size         : $base-font-size;
+  line-height       : $base-line-height;
+}
+
+h1 {
+	font-size: $title-size;
+}
+
+p {
+	&:after {
+		content: ' Mariooooo!';
+		color: $color-user;
+	}
+}
