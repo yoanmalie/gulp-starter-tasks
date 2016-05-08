@@ -4,7 +4,7 @@
 
 var appDir = './';
 var paths = {
-  project : 'myproject.dev',
+  project : 'myproject.dev', // optional, if there vhost configured
   source  : appDir + '/assets/src',
   prod    : appDir + '/assets/dist',
   vendor  : '/vendor',
@@ -180,15 +180,15 @@ gulp.task('watch', function() {
 
 // Sync Task
 gulp.task('sync', function() {
-    var files = [
-      './**/*.html',
-      './**/*.php',
-      paths.prod + paths.css.src + '/**/*',
-      paths.prod + paths.js.src + '/**/*'
-    ];
-    plugins.browserSync.init(files, {
-      proxy: paths.project,
-      notify: false
+    plugins.browserSync.init({
+        //proxy: paths.project, // optional, if there vhost configured
+        server: appDir,
+        files: paths.prod + '/**/*',
+        port: 3000,
+        notify: false,
+        options: {
+            reloadDelay: 250
+        }
     });
 });
 
