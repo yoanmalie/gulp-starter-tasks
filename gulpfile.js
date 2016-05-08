@@ -180,10 +180,15 @@ gulp.task('watch', function() {
 
 // Sync Task
 gulp.task('sync', function() {
+    var SyncFiles = [
+        appDir + '/**/*.html',
+        appDir + '/**/*.php',
+        paths.prod + '/**/*'
+    ];
     plugins.browserSync.init({
         //proxy: paths.project, // optional, if there vhost configured
         server: appDir,
-        files: paths.prod + '/**/*',
+        files: SyncFiles,
         port: 3000,
         notify: false,
         options: {
