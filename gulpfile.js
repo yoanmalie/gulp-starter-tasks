@@ -161,13 +161,6 @@ gulp.task('fonts', function() {
 gulp.task('reset', function() {
     // Reset prod
     plugins.del([paths.prod]);
-
-    // Reset source but not the /vendor subfolder
-    plugins.del([
-        paths.source + '/**',
-        '!' + paths.source,
-        '!' + paths.source + paths.vendor + '/**'
-    ]);
 });
 
 
