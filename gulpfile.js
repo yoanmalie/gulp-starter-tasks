@@ -3,11 +3,11 @@
 // --------------
 
 var appDir = '.';
+var project = {
+    'name' : 'My project',
+    'url'  : 'myproject.dev' // optional, if there vhost configured
+};
 var paths = {
-  project: {
-    name : 'My project',
-    url  : 'myproject.dev' // optional, if there vhost configured 
-  },
   source  : appDir + '/assets/src',
   prod    : appDir + '/assets/dist',
   vendor  : '/vendor',
@@ -66,7 +66,7 @@ var reportError = function (error) {
   var lineNumber = (error.lineNumber) ? ' LINE ' + error.lineNumber + ' -- ' : '';
 
   plugins.notify({
-    title: paths.project.name,
+    title: project.name,
     message: 'Task Failed [' + error.plugin + ']' + lineNumber + '\n'+ ' See console.',
     sound: 'Sosumi' // See: https://github.com/mikaelbr/node-notifier#all-notification-options-with-their-defaults
   }).write(error);
@@ -182,7 +182,7 @@ gulp.task('sync', function() {
         paths.prod + '/**/*'
     ];
     plugins.browserSync.init({
-        //proxy: paths.project.url, // optional, if there vhost configured
+        //proxy: project.url, // optional, if there vhost configured
         server: true, // optional, when no using vhost. Use the appDir variable or the bolean 'true' for current directory
         files: SyncFiles,
         port: 3000,
