@@ -4,7 +4,10 @@
 
 var appDir = './';
 var paths = {
-  project : 'myproject.dev', // optional, if there vhost configured
+  project: {
+    name : 'My project',
+    url  : 'myproject.dev' // optional, if there vhost configured 
+  },
   source  : appDir + '/assets/src',
   prod    : appDir + '/assets/dist',
   vendor  : '/vendor',
@@ -179,7 +182,7 @@ gulp.task('sync', function() {
         paths.prod + '/**/*'
     ];
     plugins.browserSync.init({
-        //proxy: paths.project, // optional, if there vhost configured
+        //proxy: paths.project.url, // optional, if there vhost configured
         server: appDir, // optional, when no using vhost
         files: SyncFiles,
         port: 3000,
