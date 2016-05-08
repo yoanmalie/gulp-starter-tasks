@@ -2,11 +2,11 @@
 // Paths config
 // --------------
 
-
+var appDir = './';
 var paths = {
   project : 'myproject.dev',
-  source  : './assets/src',
-  prod    : './assets/dist',
+  source  : appDir + '/assets/src',
+  prod    : appDir + '/assets/dist',
   vendor  : '/vendor',
 
   vendors: {
@@ -186,7 +186,6 @@ gulp.task('sync', function() {
       paths.prod + paths.css.src + '/**/*',
       paths.prod + paths.js.src + '/**/*'
     ];
-
     plugins.browserSync.init(files, {
       proxy: paths.project,
       notify: false
