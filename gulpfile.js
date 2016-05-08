@@ -180,7 +180,7 @@ gulp.task('sync', function() {
     ];
     plugins.browserSync.init({
         //proxy: paths.project, // optional, if there vhost configured
-        server: appDir,
+        server: appDir, // optional, when no using vhost
         files: SyncFiles,
         port: 3000,
         notify: false,
