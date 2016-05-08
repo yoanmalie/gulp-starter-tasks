@@ -164,7 +164,7 @@ gulp.task('reset', function() {
 
     // Reset source but not the /vendor subfolder
     plugins.del([
-    	paths.source + '/**',
+        paths.source + '/**',
         '!' + paths.source,
         '!' + paths.source + paths.vendor + '/**'
     ]);
