@@ -2,7 +2,7 @@
 // Paths config
 // --------------
 
-var appDir = './';
+var appDir = '.';
 var paths = {
   project: {
     name : 'My project',
@@ -183,7 +183,7 @@ gulp.task('sync', function() {
     ];
     plugins.browserSync.init({
         //proxy: paths.project.url, // optional, if there vhost configured
-        server: appDir, // optional, when no using vhost
+        server: true, // optional, when no using vhost. Use the appDir variable or the bolean 'true' for current directory
         files: SyncFiles,
         port: 3000,
         notify: false,
