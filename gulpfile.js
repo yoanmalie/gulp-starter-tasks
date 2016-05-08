@@ -63,11 +63,11 @@ var gulp            = require('gulp'),
 
 // Thanks to brendanfalkowski - https://github.com/mikaelbr/gulp-notify/issues/81
 var reportError = function (error) {
-  var lineNumber = (error.lineNumber) ? 'LINE ' + error.lineNumber + ' -- ' : '';
+  var lineNumber = (error.lineNumber) ? ' LINE ' + error.lineNumber + ' -- ' : '';
 
   plugins.notify({
-    title: 'Task Failed [' + error.plugin + ']',
-    message: lineNumber + 'See console.',
+    title: paths.project.name,
+    message: 'Task Failed [' + error.plugin + ']' + lineNumber + '\n'+ ' See console.',
     sound: 'Sosumi' // See: https://github.com/mikaelbr/node-notifier#all-notification-options-with-their-defaults
   }).write(error);
 
