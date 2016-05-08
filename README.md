@@ -1,17 +1,15 @@
 # What is it ?
 
-This is my basic Gulp starter for all projects. You can easily modify tasks, add or delete. There are many tasks divided into multiple files:
-  - CSS, compile Sass to css;
-  - Fonts, just moving files here, add your features;
-  - Images, compression;
-  - Javascript, concatenate and minify;
-  - Reset, burn, burn all with fire;
-  - sync, reload the page on save,
-  - watch, look if files have changed (and do a task).
+This is my basic Gulp starter for all projects. You can easily modify tasks, add or delete. There are many tasks:
+  - css, compile Sass to css;
+  - fonts, just moving files here;
+  - img, compression;
+  - js, concatenate and minify;
+  - reset, delete the dist folder;
+  - sync, synchronization with BrowserSync,
+  - watch, look files have changed.
 
-##### And there are a cool error handling!
- 
-:warning: Be careful with the reset tasks! What it does : reset the /assets folder.
+##### And there are a cool error handler!
 
 # How to run ?
 First, clone this repository, and run npm...
@@ -21,12 +19,20 @@ npm install
 ```
 Take a pause, go to swimming pool during this time. :swimmer:
 
-##### Try...
- 
-Open the index.html file (to see the differences) and launch this Gulp css task:
-```shell
-gulp css
-```
-Reload the index.html and...
+Maybe, you can set progress bar to false and save time, see: [Progress bar noticeably slows down npm install](https://github.com/npm/npm/issues/11283).
 
-![Magic gif !](https://raw.githubusercontent.com/yoanmalie/gulp-starter-tasks/master/assets/src/img/magic.gif)
+##### Try...
+You can run above tasks or build the apps (css, js, img, fonts):
+```shell
+gulp build
+```
+build, watch and sync:
+```shell
+gulp default // or just gulp
+```
+
+# Troubleshooting
+Sometimes, you need to clean your npm cache, try:
+```shell
+npm cache clean
+```
