@@ -187,9 +187,7 @@ gulp.task('sync', function() {
         files: SyncFiles,
         port: 3000,
         notify: false,
-        options: {
-            reloadDelay: 250
-        }
+        reloadDelay: 250
     });
 });
 
