@@ -21,7 +21,7 @@ var paths = {
   vendor  : '/vendor',
 
   vendors: {
-    jquery : '/jquery/dist/jquery.min.js'
+    //jquery : '/jquery/dist/jquery.min.js' // EXAMPLE, see l.133
   },
   css: {
     src        : '/css',
@@ -130,7 +130,7 @@ gulp.task('css', function() {
 // Javascript Task
 gulp.task('js', function() {
     gulp.src([
-      paths.source + paths.vendor + paths.vendors.jquery,
+      //paths.source + paths.vendor + paths.vendors.jquery, // EXAMPLE, /assets/src/vendor/jquery/dist/jquery.min.js
       paths.source + paths.js.src + '/**/*.js'
     ])
     .pipe(plugins.plumber({

@@ -44,8 +44,9 @@ gulp default // or just gulp
         │   └── main.scss
         ├── fonts
         ├── img
-        └── js
-            └── global.js
+        ├── js
+        │   └── global.js
+        └── vendor
 ```
 
 # Troubleshooting
