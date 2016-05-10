@@ -1,0 +1,11 @@
+html {
+    font-size : $root-font-size;
+}
+
+body {
+    font-size        : $base-font-size;
+    font-family      : $f-primary;
+    line-height      : $base-line-height;
+    color            : $c-secondary;
+    background-color : $c-primary;
+}

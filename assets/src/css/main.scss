@@ -1,2 +1,22 @@
-@import 'variables';
-@import 'templates/base';
+@charset 'UTF-8';
+
+/*!
+*   @project : My project
+*   @created : 2016-05-10
+*   @author  : Yoan Malié (http://yoan-malie.fr)
+*/
+
+/*
+*   Table of content:
+*
+*   - 1. Abstracts
+*       _variables
+*   - 2. Base
+*       _base
+*/
+
+// 1. Abstracts
+@import 'abstracts/variables';
+
+// 2. Base
+@import 'base/base';
