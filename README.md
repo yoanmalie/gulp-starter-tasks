@@ -31,6 +31,23 @@ build, watch and sync:
 gulp default // or just gulp
 ```
 
+# Structure
+```
+.
+└── assets
+    └── src
+        ├── css
+        │   ├── abstracts
+        │   │   └── _variables.scss
+        │   ├── base
+        │   │   └── _base.scss
+        │   └── main.scss
+        ├── fonts
+        ├── img
+        └── js
+            └── global.js
+```
+
 # Troubleshooting
 Sometimes, you need to clean your npm cache, try:
 ```shell
