@@ -1,3 +1,11 @@
+/*
+*   @project : My project
+*   @created : 2016-05-10
+*   @author  : Yoan Malié (http://yoan-malie.fr)
+*/
+
+
+
 // --------------
 // Paths config
 // --------------
