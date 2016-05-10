@@ -1,13 +1,13 @@
 # What is it ?
 
 This is my basic Gulp starter for all projects. You can easily modify tasks, add or delete. There are many tasks:
-  - css, compile Sass to css;
-  - fonts, just moving files here;
-  - img, compression;
-  - js, concatenate and minify;
-  - reset, delete the dist folder;
-  - sync, synchronization with BrowserSync,
-  - watch, look files have changed.
+  - **css**, compile Sass to css;
+  - **fonts**, just moving files here;
+  - **img**, compression;
+  - **js**, concatenate and minify;
+  - **reset**, delete the dist folder;
+  - **sync**, synchronization with BrowserSync,
+  - **watch**, look files have changed.
 
 ##### And there are a cool error handler!
 
